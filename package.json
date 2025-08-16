@@ -24,6 +24,7 @@
     "autoprefixer": "^10.4.21",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
+    "data-fns": "^1.1.0",
     "date-fns": "^4.1.0",
     "kill-port": "^2.0.1",
     "lucide-react": "^0.539.0",

@@ -38,12 +38,12 @@ const AccountCard = ({ account }) => {
     if (updatedAccount?.success) {
       toast.success("Default account updated successfully");
     }
-  }, [updatedAccount, updateDefaultLoading]);
+  }, [updatedAccount]);
   useEffect(() => {
     if (error) {
       toast.error(error.message || "Failed to update default account");
     }
-  }, [updatedAccount, updateDefaultLoading]);
+  }, [error]);
 
   return (
     <Card className="hover:shadow-md transition-shadow group relative">

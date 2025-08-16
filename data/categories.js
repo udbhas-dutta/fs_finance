@@ -1,0 +1,273 @@
+export const defaultCategories = [
+  // INCOME
+  {
+    id: "salary",
+    name: "Salary",
+    type: "INCOME",
+    color: "#10B981",       // Teal green (stable, trust)
+    emoji: "💼",
+    icon: "Wallet",
+    iconType: "lucide",
+    default: true,
+    description: "Regular paychecks from employment.",
+    monthlyLimit: null,
+  },
+  {
+    id: "freelance",
+    name: "Freelance",
+    type: "INCOME",
+    color: "#2563EB",       // Blue (responsible, digital)
+    emoji: "🧑‍💻",
+    icon: "Laptop",
+    iconType: "lucide",
+    default: true,
+    description: "Earnings from freelance or gig work.",
+    monthlyLimit: null,
+  },
+  {
+    id: "investments",
+    name: "Investments",
+    type: "INCOME",
+    color: "#8B5CF6",       // Purple (growth, prosperity)
+    emoji: "📈",
+    icon: "TrendingUp",
+    iconType: "lucide",
+    default: true,
+    description: "Profits or dividends from investments.",
+    monthlyLimit: null,
+  },
+  {
+    id: "business",
+    name: "Business",
+    type: "INCOME",
+    color: "#EC4899",       // Hot pink (opportunity, side hustle)
+    emoji: "🏢",
+    icon: "Building",
+    iconType: "lucide",
+    default: true,
+    description: "Business profits or side hustles.",
+    monthlyLimit: null,
+  },
+  {
+    id: "rental",
+    name: "Rental",
+    type: "INCOME",
+    color: "#F59E42",       // Orange (warm, stability)
+    emoji: "🏠",
+    icon: "Home",
+    iconType: "lucide",
+    default: true,
+    description: "Income from renting property.",
+    monthlyLimit: null,
+  },
+  {
+    id: "other-income",
+    name: "Other Income",
+    type: "INCOME",
+    color: "#64748B",       // Slate gray (neutral)
+    emoji: "➕",
+    icon: "Plus",
+    iconType: "lucide",
+    default: false,
+    description: "Any other sources of income.",
+    monthlyLimit: null,
+  },
+
+  // EXPENSE
+  {
+    id: "housing",
+    name: "Housing",
+    type: "EXPENSE",
+    color: "#F87171",       // Red (major outflow, attention)
+    emoji: "🏠",
+    icon: "Home",
+    iconType: "lucide",
+    default: true,
+    description: "Rent, mortgage, property tax, and maintenance.",
+    monthlyLimit: 25000,
+    subcategories: ["Rent", "Mortgage", "Property Tax", "Maintenance"],
+  },
+  {
+    id: "transportation",
+    name: "Transportation",
+    type: "EXPENSE",
+    color: "#FBBF24",       // Amber (motion, transit)
+    emoji: "🚗",
+    icon: "Car",
+    iconType: "lucide",
+    default: true,
+    description: "Fuel, public transport, parking, etc.",
+    monthlyLimit: 5000,
+    subcategories: ["Fuel", "Public Transport", "Maintenance", "Parking"],
+  },
+  {
+    id: "groceries",
+    name: "Groceries",
+    type: "EXPENSE",
+    color: "#34D399",       // Green (healthy, necessary)
+    emoji: "🛒",
+    icon: "Shopping",
+    iconType: "lucide",
+    default: true,
+    description: "Supermarket, food, daily essentials.",
+    monthlyLimit: 7000,
+  },
+  {
+    id: "utilities",
+    name: "Utilities",
+    type: "EXPENSE",
+    color: "#38BDF8",       // Blue (water, electricity)
+    emoji: "💡",
+    icon: "Zap",
+    iconType: "lucide",
+    default: true,
+    description: "Electricity, water, gas, internet, phone.",
+    monthlyLimit: 3000,
+    subcategories: ["Electricity", "Water", "Gas", "Internet", "Phone"],
+  },
+  {
+    id: "entertainment",
+    name: "Entertainment",
+    type: "EXPENSE",
+    color: "#D8B4FE",       // Light purple (fun, gentle)
+    emoji: "🎬",
+    icon: "Film",
+    iconType: "lucide",
+    default: true,
+    description: "Movies, streaming, games, events.",
+    monthlyLimit: 2000,
+    subcategories: ["Movies", "Games", "Streaming Services"],
+  },
+  {
+    id: "food",
+    name: "Food (Dining Out)",
+    type: "EXPENSE",
+    color: "#F472B6",       // Pink (treat, eating out)
+    emoji: "🍔",
+    icon: "UtensilsCrossed",
+    iconType: "lucide",
+    default: true,
+    description: "Restaurants, cafes, takeaway.",
+    monthlyLimit: 4000,
+  },
+  {
+    id: "shopping",
+    name: "Shopping",
+    type: "EXPENSE",
+    color: "#FDBA74",       // Soft orange (retail)
+    emoji: "🛍️",
+    icon: "ShoppingBag",
+    iconType: "lucide",
+    default: true,
+    description: "Clothes, electronics, home goods.",
+    monthlyLimit: 5000,
+    subcategories: ["Clothing", "Electronics", "Home Goods"],
+  },
+  {
+    id: "healthcare",
+    name: "Healthcare",
+    type: "EXPENSE",
+    color: "#06B6D4",       // Teal blue (medical, calm)
+    emoji: "🩺",
+    icon: "HeartPulse",
+    iconType: "lucide",
+    default: true,
+    description: "Medical, dental, pharmacy, insurance.",
+    monthlyLimit: 3000,
+    subcategories: ["Medical", "Dental", "Pharmacy", "Insurance"],
+  },
+  {
+    id: "education",
+    name: "Education",
+    type: "EXPENSE",
+    color: "#6366F1",       // Indigo (learning, investment)
+    emoji: "🎓",
+    icon: "GraduationCap",
+    iconType: "lucide",
+    default: true,
+    description: "Tuition, books, courses.",
+    monthlyLimit: 2000,
+    subcategories: ["Tuition", "Books", "Courses"],
+  },
+  {
+    id: "personal",
+    name: "Personal Care",
+    type: "EXPENSE",
+    color: "#EA580C",       // Deep orange (personal)
+    emoji: "💇",
+    icon: "Smile",
+    iconType: "lucide",
+    default: false,
+    description: "Haircuts, gym, beauty.",
+    monthlyLimit: 1500,
+    subcategories: ["Haircut", "Gym", "Beauty"],
+  },
+  {
+    id: "travel",
+    name: "Travel",
+    type: "EXPENSE",
+    color: "#64748B",       // Slate gray (neutral, away)
+    emoji: "✈️",
+    icon: "Plane",
+    iconType: "lucide",
+    default: false,
+    description: "Flights, accommodation, transit.",
+    monthlyLimit: null,
+  },
+  {
+    id: "insurance",
+    name: "Insurance",
+    type: "EXPENSE",
+    color: "#818CF8",       // Soft indigo (security)
+    emoji: "🛡️",
+    icon: "Shield",
+    iconType: "lucide",
+    default: false,
+    description: "Life, vehicle, home insurance.",
+    monthlyLimit: null,
+    subcategories: ["Life", "Home", "Vehicle"],
+  },
+  {
+    id: "gifts",
+    name: "Gifts & Donations",
+    type: "EXPENSE",
+    color: "#F43F5E",       // Pink-red (kind, giving)
+    emoji: "🎁",
+    icon: "Gift",
+    iconType: "lucide",
+    default: false,
+    description: "Gifts, charity, donations.",
+    monthlyLimit: 1000,
+  },
+  {
+    id: "bills",
+    name: "Bills & Fees",
+    type: "EXPENSE",
+    color: "#A1A1AA",       // Neutral gray (misc fees)
+    emoji: "🧾",
+    icon: "Receipt",
+    iconType: "lucide",
+    default: false,
+    description: "Bank/service fees, government charges.",
+    monthlyLimit: null,
+    subcategories: ["Bank Fees", "Late Fees", "Service Charges"],
+  },
+  {
+    id: "other-expense",
+    name: "Other Expenses",
+    type: "EXPENSE",
+    color: "#9CA3AF",       // Lighter gray (catch-all)
+    emoji: "🌀",
+    icon: "MoreHorizontal",
+    iconType: "lucide",
+    default: false,
+    description: "Miscellaneous or uncategorized items.",
+    monthlyLimit: null,
+  },
+];
+
+
+export const categoryColors = defaultCategories.reduce((acc, category) => {
+  acc[category.id] = category.color;
+  return acc;
+}, {});
