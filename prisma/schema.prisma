@@ -61,7 +61,7 @@ model Transaction {
   receiptUrl        String?
   isRecurring       Boolean            @default(false)
   recurringInterval RecurringInterval? // only used if isRecurring is true
-  nextrecurringDate DateTime? // stores the next date for recurring transaction
+  nextRecurringDate DateTime? // stores the next date for recurring transaction
   lastProcessed     DateTime? // last date this transaction was processed
   status            TransactionStatus  @default(COMPLETED)
   userId            String
