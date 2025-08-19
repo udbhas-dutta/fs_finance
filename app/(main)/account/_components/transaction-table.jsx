@@ -292,10 +292,10 @@ const TransactionTable = ({ transactions }) => {
                 </div>
               </TableHead>
               <TableHead
-                className="cursor-pointer text-right font-semibold p-3"
+                className="cursor-pointer font-semibold p-3 text-right"
                 onClick={() => handleSort("amount")}
               >
-                <div className="flex items-center">
+                <div className="flex items-center justify-end">
                   Amount{" "}
                   {sortConfig.field === "amount" &&
                     (sortConfig.direction === "asc" ? (
@@ -369,10 +369,10 @@ const TransactionTable = ({ transactions }) => {
                           <div className="text-sm">
                             <div className="font-medium">Next Date:</div>
                             <div className="">
-                              {transaction.nextrecurringDate &&
-                              !isNaN(new Date(transaction.nextrecurringDate))
+                              {transaction.nextRecurringDate &&
+                              !isNaN(new Date(transaction.nextRecurringDate))
                                 ? format(
-                                    new Date(transaction.nextrecurringDate),
+                                    new Date(transaction.nextRecurringDate),
                                     "MMM dd, yyyy"
                                   )
                                 : "-"}
